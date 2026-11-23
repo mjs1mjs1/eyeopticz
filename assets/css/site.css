@@ -1,0 +1,63 @@
+/* EyeOpticz. Colours are set once here; change --accent to restyle the site. */
+:root{
+  --bg:#ffffff; --fg:#17232b; --muted:#56666f; --line:#d7e0e5; --soft:#f1f6f8;
+  --accent:#0a7ea8; --accent-soft:#e3f2f8; --note:#fff6d9; --note-fg:#5b4a10;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#11181d; --fg:#e4ecf0; --muted:#9db0ba; --line:#2a3741; --soft:#18232a;
+  --accent:#4cc0e8; --accent-soft:#18303b; --note:#3a3216; --note-fg:#f0dc9a; color-scheme:dark}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 var(--sans)}
+a{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.inner{max-width:900px;margin:0 auto;padding-left:max(18px,env(safe-area-inset-left));padding-right:max(18px,env(safe-area-inset-right))}
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;background:var(--bg);padding:6px 10px}
+.site-header{border-bottom:1px solid var(--line)}
+.site-header .inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 28px;padding-block:16px}
+.brand{font-family:var(--serif);font-weight:600;font-size:22px;color:var(--fg);text-decoration:none;display:flex;flex-direction:column;line-height:1.2}
+.brand span{font-family:var(--sans);font-size:13px;font-weight:400;color:var(--muted)}
+nav{display:flex;flex-wrap:wrap;gap:4px 18px}
+nav a{color:var(--muted);text-decoration:none;font-size:15px;padding:2px 0;border-bottom:2px solid transparent}
+nav a:hover,nav a[aria-current]{color:var(--fg);border-color:var(--accent)}
+main{padding-block:36px 56px}
+.prose{max-width:68ch}
+.prose h1{font-family:var(--serif);font-weight:600;font-size:2rem;line-height:1.2;margin:0 0 8px;text-wrap:balance}
+.prose h2{font-family:var(--serif);font-weight:600;font-size:1.4rem;margin:2.2em 0 .5em;text-wrap:balance}
+.prose h3{font-size:1.05rem;margin:1.6em 0 .3em}
+.prose p,.prose ul,.prose ol{margin:0 0 1em}
+.prose li{margin-bottom:.35em}
+.byline{color:var(--muted);font-size:15px;margin-bottom:1.4em}
+.lead{font-size:1.15rem}
+.eyebrow{text-transform:uppercase;letter-spacing:.07em;font-size:13px;color:var(--muted);margin:0 0 6px}
+.note{background:var(--note);color:var(--note-fg);border-radius:6px;padding:10px 14px;font-size:15px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:1.6em 0;max-width:none}
+.card{display:flex;flex-direction:column;gap:6px;border:1px solid var(--line);border-radius:8px;padding:14px 16px;text-decoration:none;color:var(--fg)}
+.card:hover{border-color:var(--accent);background:var(--soft)}
+.card span{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
+.card strong{font-family:var(--serif);font-weight:500;font-size:1.1rem;line-height:1.35}
+.pubs{padding-left:1.6em}ul.pubs{list-style:none;padding-left:0}.pubs li{margin-bottom:.9em}
+.pub-title{display:block;font-weight:500}
+.pub-meta{color:var(--muted);font-size:15px}
+.doi{font-family:var(--mono);font-size:13px}
+.paper-list{padding-left:1.2em}
+ul.plain{padding-left:1.2em;font-size:15px}
+.citation{color:var(--muted)}
+.cite-block{background:var(--soft);border-radius:6px;padding:12px 14px;font-size:15px}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin:1em 0}
+.button{display:inline-block;background:var(--accent);color:var(--bg);text-decoration:none;padding:8px 16px;border-radius:6px;font-weight:500;font-size:15px}
+.button.secondary{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+figure{margin:1.6em 0}
+figure svg{width:100%;height:auto;color:var(--fg);max-width:560px}
+figure svg text{fill:var(--muted);font:13px var(--sans)}
+figcaption{font-size:14px;color:var(--muted);margin-top:6px}
+.video{position:relative;aspect-ratio:16/9;max-width:100%;background:var(--soft);border-radius:6px;overflow:hidden;margin:.6em 0 1.4em}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.site-footer{border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+.site-footer .inner{padding-block:20px}
+.site-footer p{margin:.3em 0}
+@media (max-width:640px){body{font-size:16px}.prose h1{font-size:1.6rem}}

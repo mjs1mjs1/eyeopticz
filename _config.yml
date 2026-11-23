@@ -1,0 +1,50 @@
+# Site settings. Change these lines if your details change.
+title: EyeOpticz
+tagline: Research on the optics of human vision
+description: >-
+  Original research by Michael J. Simpson, Ph.D., on under-explored parts of
+  human vision: the nodal point of the eye, far peripheral vision, negative
+  dysphotopsia and the history of physiological optics.
+url: "https://eyeopticz.com"
+baseurl: ""
+lang: en
+
+author:
+  name: Michael J. Simpson
+  display: Michael J. Simpson, Ph.D.
+  short: Simpson, Michael J.
+  email: ""         # the contact email to show on the site (it will be public)
+  linkedin: https://www.linkedin.com/in/simpsonmichaelj
+  orcid: ""          # paste your ORCID link here when you have one
+  scholar: ""        # paste your Google Scholar profile link here when you have one
+
+# Menu, in order
+nav:
+  - title: Home
+    url: /
+  - title: Nodal point
+    url: /nodal-point/
+  - title: Far peripheral vision
+    url: /far-peripheral-vision/
+  - title: Negative dysphotopsia
+    url: /negative-dysphotopsia/
+  - title: History of optics
+    url: /history/
+  - title: Publications
+    url: /publications/
+  - title: About
+    url: /about/
+
+collections:
+  papers:
+    output: true
+    permalink: /papers/:name/
+
+defaults:
+  - scope: { path: "" }
+    values: { layout: page }
+  - scope: { path: "", type: papers }
+    values: { layout: paper }
+
+permalink: pretty
+exclude: [README.md, SETUP.md, Gemfile, Gemfile.lock, .ruby-version, files/README.txt]

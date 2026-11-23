@@ -1,0 +1,16 @@
+---
+layout: null
+sitemap: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- for p in site.html_pages %}{% unless p.sitemap == false %}
+  <url><loc>{{ p.url | absolute_url }}</loc>{% if p.updated %}<lastmod>{{ p.updated | date: "%Y-%m-%d" }}</lastmod>{% endif %}</url>
+{%- endunless %}{% endfor %}
+{%- for p in site.papers %}
+  <url><loc>{{ p.url | absolute_url }}</loc></url>
+{%- endfor %}
+{%- for f in site.static_files %}{% if f.extname == ".pdf" %}
+  <url><loc>{{ f.path | absolute_url }}</loc></url>
+{%- endif %}{% endfor %}
+</urlset>

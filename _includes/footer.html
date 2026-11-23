@@ -1,0 +1,12 @@
+<footer class="site-footer">
+  <div class="inner">
+    <p>© {{ site.time | date: "%Y" }} {{ site.author.name }}. Text on this site may be quoted with attribution.
+    The information here is for research and education and is not medical advice.</p>
+    <p>
+      {%- if site.author.email != "" %}Corrections, observations and questions are welcome: <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a> · {% endif -%}
+      <a href="{{ site.author.linkedin }}">LinkedIn</a>
+      {%- if site.author.orcid != "" %} · <a href="{{ site.author.orcid }}">ORCID</a>{% endif -%}
+      {%- if site.author.scholar != "" %} · <a href="{{ site.author.scholar }}">Google Scholar</a>{% endif %}
+    </p>
+  </div>
+</footer>

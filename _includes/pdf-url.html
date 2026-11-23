@@ -1,0 +1,8 @@
+{%- comment -%} Sets pdf_href: the local copy in /files/ if it exists, otherwise the old online copy. {%- endcomment -%}
+{%- assign pdf_href = "" -%}
+{%- if include.local and include.local != "" -%}
+  {%- assign local_path = "/files/" | append: include.local -%}
+  {%- assign hit = site.static_files | where: "path", local_path | first -%}
+  {%- if hit -%}{%- assign pdf_href = local_path | absolute_url -%}{%- endif -%}
+{%- endif -%}
+{%- if pdf_href == "" and include.remote -%}{%- assign pdf_href = include.remote -%}{%- endif -%}

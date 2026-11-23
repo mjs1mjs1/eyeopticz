@@ -1,0 +1,10 @@
+{% if include.numbered %}<ol class="pubs" reversed>{% else %}<ul class="pubs">{% endif %}
+{%- for p in include.items %}
+  <li>
+    <span class="pub-title">{% if p.page %}<a href="{{ p.page | relative_url }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</span>
+    <span class="pub-meta">{{ p.authors }}. <em>{{ p.journal }}</em>{% if p.ref != "" %} {{ p.ref }}{% endif %} ({{ p.year }}).{% if p.note %} {{ p.note }}.{% endif %}
+    {%- if p.doi != "" %} <a class="doi" href="https://doi.org/{{ p.doi }}">doi:{{ p.doi }}</a>{% endif %}
+    {%- if p.page %} · <a href="{{ p.page | relative_url }}">PDF and summary</a>{% endif %}</span>
+  </li>
+{%- endfor %}
+{% if include.numbered %}</ol>{% else %}</ul>{% endif %}

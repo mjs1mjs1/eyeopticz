@@ -1,0 +1,8 @@
+{%- assign rel = site.papers | where: "topic", include.topic | sort: "year" | reverse -%}
+{%- if rel.size > 0 %}
+<ul class="paper-list">
+{%- for p in rel %}
+  <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a> <span class="pub-meta">{% if p.journal %}<em>{{ p.journal }}</em> {% endif %}({{ p.year }})</span></li>
+{%- endfor %}
+</ul>
+{%- endif %}

@@ -1,0 +1,50 @@
+# Your publication list. Newest first within each group.
+# To add a paper, copy one entry and change the details.
+# "page" links to the paper's own page on this site, if it has one.
+journal:
+  - {year: 2026, authors: "Simpson MJ, Georgiev S, Findl O", title: "Relating intraocular lens tilt to the optical axes of the eye", journal: "J. Opt. Soc. Am. A", ref: "43(3), 524–534", doi: "10.1364/josaa.587441", note: "Open access"}
+  - {year: 2025, authors: "Simpson MJ, Cooke DL, Muzyka-Woźniak M", title: "Vignetting and peripheral double images with intraocular lenses", journal: "Biomed. Opt. Express", ref: "16(6), 2495–2503", doi: "10.1364/boe.559745"}
+  - {year: 2025, authors: "Simpson MJ", title: "Design concepts for advanced-technology intraocular lenses [Invited]", journal: "Biomed. Opt. Express", ref: "16, 334", doi: "10.1364/boe.544647"}
+  - {year: 2025, authors: "Simpson MJ", title: "Comment on: Optical confirmation by a thick-lens formula of the optimized A-constant (as calculated by a thin-lens formula) of a new intraocular lens", journal: "J. Cataract Refract. Surg.", ref: "51(12), 1156–1157", doi: "10.1097/j.jcrs.0000000000001787"}
+  - {year: 2023, authors: "Simpson MJ", title: "Optical modeling of the entire visual field of the eye", journal: "J. Opt. Soc. Am. A", ref: "", doi: "", page: /papers/optical-modeling-entire-visual-field/}
+  - {year: 2023, authors: "Simpson MJ", title: "Focal length, EFL, and the eye", journal: "Appl. Opt.", ref: "62(7), 1853", doi: "10.1364/ao.481805", page: /papers/focal-length-efl-and-the-eye/}
+  - {year: 2022, authors: "Simpson MJ", title: "Nodal points and the eye", journal: "Appl. Opt.", ref: "61(10), 2797", doi: "10.1364/ao.455464", page: /papers/nodal-points-and-the-eye/}
+  - {year: 2022, authors: "Erie JC, Simpson MJ, Mahr MA", title: "Effect of a 7.0 mm intraocular lens optic on peripheral retinal illumination with implications for negative dysphotopsia", journal: "J. Cataract Refract. Surg.", ref: "48(1), 95–99", doi: "10.1097/j.jcrs.0000000000000822"}
+  - {year: 2021, authors: "Simpson MJ", title: "Scaling the retinal image of the wide-angle eye using the nodal point", journal: "Photonics", ref: "8(7), 284", doi: "10.3390/photonics8070284", note: "Open access", page: /papers/scaling-retinal-image-wide-angle-eye/}
+  - {year: 2021, authors: "Simpson MJ", title: "Pre-clinical estimation of the intraocular lens A-constant, and its relationship to power, shape factor, and asphericity", journal: "Appl. Opt.", ref: "60(19), 5662", doi: "10.1364/ao.426155", page: /papers/iol-a-constant-pre-clinical-estimation/}
+  - {year: 2021, authors: "Simpson MJ", title: "Corneal power values for use with keratoprostheses and intraocular lenses", journal: "Ophthalmic Physiol. Opt.", ref: "41(6), 1285–1291", doi: "10.1111/opo.12886"}
+  - {year: 2021, authors: "Simpson MJ", title: "Comment on: Distinct differences in anterior chamber configuration and peripheral aberrations in negative dysphotopsia", journal: "J. Cataract Refract. Surg.", ref: "47(1), 139–140", doi: "10.1097/j.jcrs.0000000000000432"}
+  - {year: 2020, authors: "Simpson MJ", title: "Intraocular lens far peripheral vision: image detail and negative dysphotopsia", journal: "J. Cataract Refract. Surg.", ref: "46(3), 451–458", doi: "10.1097/j.jcrs.0000000000000103", page: /papers/iol-far-peripheral-vision-image-detail/}
+  - {year: 2019, authors: "Simpson MJ", title: "Simulated images of intraocular lens negative dysphotopsia and visual phenomena", journal: "J. Opt. Soc. Am. A", ref: "36(4), B44–B51", doi: "10.1364/josaa.36.000b44", page: /papers/simulated-images-negative-dysphotopsia/}
+  - {year: 2019, authors: "Erie JC, Simpson MJ, Bandhauer MH", title: "Influence of the intraocular lens optic–haptic junction on illumination of the peripheral retina and negative dysphotopsia", journal: "J. Cataract Refract. Surg.", ref: "45(9), 1335–1339", doi: "10.1016/j.jcrs.2019.04.019"}
+  - {year: 2019, authors: "Erie JC, Simpson MJ, Bandhauer MH", title: "A modified intraocular lens design to reduce negative dysphotopsia", journal: "J. Cataract Refract. Surg.", ref: "45(7), 1013–1019", doi: "10.1016/j.jcrs.2019.01.019"}
+  - {year: 2019, authors: "Erie JC, Simpson MJ, Bandhauer MH", title: "Effect of a sulcus-fixated piggyback intraocular lens on negative dysphotopsia: ray-tracing analysis", journal: "J. Cataract Refract. Surg.", ref: "45(4), 443–450", doi: "10.1016/j.jcrs.2018.10.041"}
+  - {year: 2018, authors: "Simpson MJ, Muzyka-Woźniak M", title: "Iris characteristics affecting far peripheral vision and negative dysphotopsia", journal: "J. Cataract Refract. Surg.", ref: "44(4), 459–465", doi: "10.1016/j.jcrs.2018.01.028", page: /papers/iris-characteristics-far-peripheral-vision/}
+  - {year: 2017, authors: "Holladay JT, Simpson MJ", title: "Negative dysphotopsia: causes and rationale for prevention and treatment", journal: "J. Cataract Refract. Surg.", ref: "43(2), 263–275", doi: "10.1016/j.jcrs.2016.11.049"}
+  - {year: 2017, authors: "Simpson MJ", title: "Mini-review: Far peripheral vision", journal: "Vision Res.", ref: "140, 96–105", doi: "10.1016/j.visres.2017.08.001", page: /papers/far-peripheral-vision-mini-review/}
+  - {year: 2015, authors: "Simpson MJ", title: "Vignetting and negative dysphotopsia with intraocular lenses in \"far peripheral vision\"", journal: "J. Opt. Soc. Am. A", ref: "32(9), 1672", doi: "10.1364/josaa.32.001672", page: /papers/vignetting-negative-dysphotopsia/}
+  - {year: 2015, authors: "Simpson MJ", title: "Managing and understanding negative dysphotopsia (letter)", journal: "J. Cataract Refract. Surg.", ref: "41(2), 477", doi: "10.1016/j.jcrs.2014.12.038"}
+  - {year: 2014, authors: "Simpson MJ", title: "Double image in far peripheral vision of pseudophakic eye as source of negative dysphotopsia", journal: "J. Opt. Soc. Am. A", ref: "31(12), 2642–2649", doi: "10.1364/josaa.31.002642", page: /papers/double-image-far-peripheral-vision/}
+  - {year: 2014, authors: "Simpson MJ, Charman WN", title: "The effect of testing distance on intraocular lens power calculation", journal: "J. Refract. Surg.", ref: "30(11), 726", doi: "10.3928/1081597x-20141021-01"}
+
+earlier:
+  - {year: 2012, authors: "Simpson MJ", title: "Refractive outcomes for toric intraocular lenses", journal: "Arch. Ophthalmol.", ref: "130(7), 945", doi: "10.1001/archophthalmol.2011.1912"}
+  - {year: 2011, authors: "Simpson MJ, Alford MA", title: "Permanent axial length change as a result of cavernous hemangioma", journal: "Optom. Vis. Sci.", ref: "88(7), 890–893", doi: "10.1097/opx.0b013e318219d278"}
+  - {year: 2009, authors: "Simpson MJ", title: "Assessing the optical performance of multifocal (diffractive) intraocular lenses (letter)", journal: "Ophthalmic Physiol. Opt.", ref: "29(2), 207", doi: "10.1111/j.1475-1313.2008.00641_1.x"}
+  - {year: 2006, authors: "Davison JA, Simpson MJ", title: "History and development of the apodized diffractive intraocular lens", journal: "J. Cataract Refract. Surg.", ref: "32(5), 849–858", doi: "10.1016/j.jcrs.2006.02.006"}
+  - {year: 1992, authors: "Simpson MJ", title: "Diffractive multifocal intraocular lens image quality", journal: "Appl. Opt.", ref: "31(19), 3621", doi: "10.1364/ao.31.003621"}
+  - {year: 1992, authors: "Simpson MJ", title: "Optical quality of intraocular lenses", journal: "J. Cataract Refract. Surg.", ref: "18(1), 86–94", doi: "10.1016/s0886-3350(13)80388-4"}
+  - {year: 1989, authors: "Simpson MJ", title: "The diffractive multifocal intraocular lens", journal: "Eur. J. Implant Refract. Surg.", ref: "1(2), 115–121", doi: "10.1016/s0955-3681(89)80010-3"}
+
+presentations:
+  - "Simpson MJ. Lens capsule effects on negative dysphotopsia, visual phenomena and refractive error. Presbyopia 2019, Paris, September 2019."
+  - "Simpson MJ. Ray tracing of negative dysphotopsias. Symposium on Negative Dysphotopsia, ESCRS, Paris, September 2019."
+  - "Simpson MJ. Image detail and negative dysphotopsia with intraocular lens far peripheral vision. Poster, ARVO 2019, Vancouver."
+  - "Simpson MJ. Modelling IOL negative dysphotopsia and visual phenomena. Visual and Physiological Optics (VPO), Athens, 2018."
+  - "Simpson MJ, Muzyka-Wozniak M. Effect of pupil diameter on both negative dysphotopsia and peripheral vision with IOLs. ESCRS, Lisbon, October 2017."
+  - "Simpson MJ, Muzyka-Wozniak M. Iris characteristics affecting far peripheral vision and negative dysphotopsia. Baltimore, May 2017."
+  - "Simpson MJ. Parameters affecting both far peripheral vision in phakic eyes and negative dysphotopsia with intraocular lenses. ARVO, Seattle, May 2016."
+  - "Simpson MJ. Theoretical evaluation of far peripheral vision and negative dysphotopsia for the pseudophakic eye. ASCRS, New Orleans, May 2016."
+  - "Simpson MJ. Modern intraocular lens design principles. Wavefront Congress, San Francisco, March 2016."
+  - "Simpson MJ. Parameters affecting vignetting and negative dysphotopsia in the far peripheral visual field of the pseudophakic eye. ARVO, Denver, May 2015."
+  - "Simpson MJ. Scaling the retinal image of the pseudophakic eye using the nodal point. Frontiers in Optics, 2020 (doi:10.1364/fio.2020.fw5e.3)."

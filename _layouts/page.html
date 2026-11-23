@@ -1,0 +1,10 @@
+---
+layout: default
+---
+<article class="prose">
+  <h1>{{ page.title }}</h1>
+  {%- if page.hide_byline != true %}
+  <p class="byline">{{ site.author.display }}{% if page.updated %} · Updated {{ page.updated | date: "%-d %B %Y" }}{% endif %}{% if page.medical_note %} · Not medical advice{% endif %}</p>
+  {%- endif %}
+  {{ content }}
+</article>
