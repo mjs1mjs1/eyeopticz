@@ -6,12 +6,17 @@ hide_byline: true
 
 {% if site.author.photo != "" %}<figure class="portrait"><img src="{{ '/assets/img/' | append: site.author.photo | relative_url }}" alt="{{ site.author.display }}"></figure>{% endif %}
 
-<p class="lead">I am Michael J. Simpson, Ph.D., an optical scientist. I worked in industry for more than 25 years on the research and development of intraocular lenses, including diffractive multifocal and toric lenses, and I continue to work on ophthalmic optics.</p>
+<p class="lead">This website has information about various specific aspects of human vision, rather than being a general overview. The main topics are ones that have rarely been studied. but these have led back to topics that are widely discussed, such as the nodal point and lens tilt, where some of the fundamentals are reconsidered. No medical advice is given here.
+  
+The website is run by Mike Simpson, and at the moment I still have a separate website for consulting work at [simpsonoptics.com](https://simpsonoptics.com).
 
-This site is for my research on parts of human vision that are rarely studied. It is separate from my consulting work, which is described at [simpsonoptics.com](https://simpsonoptics.com).
+</p>
+
+
 
 ## Research interests
 
+- Intraocular lenses (IOLs)
 - The nodal point and the optics of the wide-angle eye
 - Far peripheral vision and how intraocular lenses change it
 - Negative and positive dysphotopsia
