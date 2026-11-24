@@ -6,7 +6,7 @@ hide_byline: true
 
 {% if site.author.photo != "" %}<figure class="portrait"><img src="{{ '/assets/img/' | append: site.author.photo | relative_url }}" alt="{{ site.author.display }}"></figure>{% endif %}
 
-<p class="lead">This website explores specific aspects of human vision, including topics that have rarely been studied. It is run by Mike Simpson, who has a separate website for consulting work at [simpsonoptics.com](https://simpsonoptics.com) (for now).
+<p class="lead">This website explores specific aspects of human vision, including topics that have rarely been studied. It is run by Mike Simpson, Ph.D., who has a separate website for consulting work (https://simpsonoptics.com) (for now).
 
 </p>
 
