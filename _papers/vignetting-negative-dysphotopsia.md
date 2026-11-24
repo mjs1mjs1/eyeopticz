@@ -13,4 +13,4 @@ topic: dysphotopsia
 version_note: This PDF is the accepted manuscript. The published version has small editorial changes.
 ---
 <!-- Replace this paragraph with the paper's abstract. -->
-Ray-trace analysis of how the edge of an intraocular lens vignettes light in far peripheral vision, as an explanation for negative dysphotopsia.
+At very large visual angles, vignetting can occur at the edge of an intraocular lens (IOL) because it is much smaller than the natural crystalline lens that it replaces. Raytrace calculations show that by 80-90 degrees of input visual angle it is possible that about half the light is no longer focused by the IOL. This may create curved, peripheral, shadowlike regions, which are a clinical characteristic of negative dysphotopsia. The imaging characteristics for this “far peripheral vision” region are different from those of a phakic eye, whether or not negative dysphotopsia is experienced.
