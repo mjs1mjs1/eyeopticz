@@ -13,10 +13,11 @@ author:
   name: Michael J. Simpson
   display: Michael J. Simpson, Ph.D.
   short: Simpson, Michael J.
-  email: "mjs1@outlook.com"         # the contact email to show on the site (it will be public)
+  email: ""         # the contact email to show on the site (it will be public)
   linkedin: https://www.linkedin.com/in/simpsonmichaelj
   orcid: ""          # paste your ORCID link here when you have one
   scholar: ""        # paste your Google Scholar profile link here when you have one
+  photo: ""          # e.g. photo.jpg, after putting the picture in assets/img
 
 # Menu, in order
 nav:
@@ -44,7 +45,20 @@ defaults:
   - scope: { path: "" }
     values: { layout: page }
   - scope: { path: "", type: papers }
-    values: { layout: paper }
+    values: { layout: paper, color: teal }
+  # Colour and icon for each topic page
+  - scope: { path: "nodal-point.md" }
+    values: { color: teal, icon: nodal }
+  - scope: { path: "far-peripheral-vision.md" }
+    values: { color: amber, icon: peripheral }
+  - scope: { path: "negative-dysphotopsia.md" }
+    values: { color: coral, icon: dysphotopsia }
+  - scope: { path: "history.md" }
+    values: { color: indigo, icon: history }
+  - scope: { path: "publications.md" }
+    values: { color: teal, icon: papers }
+  - scope: { path: "about.md" }
+    values: { color: indigo }
 
 permalink: pretty
-exclude: [README.md, SETUP.md, Gemfile, Gemfile.lock, .ruby-version, files/README.txt]
+exclude: [README.md, SETUP.md, Gemfile, Gemfile.lock, wrangler.jsonc, files/README.txt, assets/img/README.txt]

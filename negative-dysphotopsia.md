@@ -10,6 +10,11 @@ medical_note: true
 
 <p class="note">This page explains optics research. It is not medical advice. If you have concerns about your vision, please see an ophthalmologist or optometrist.</p>
 
+<figure class="diagram">
+{% include fig-dysphotopsia.svg %}
+<figcaption>Schematic only. At wide angles some light passes through the small intraocular lens and some misses it. The two paths land in different places on the retina, and the gap between them is seen as a shadow.</figcaption>
+</figure>
+
 ## In brief
 
 - In the far periphery, some light passes through the intraocular lens and some passes beside it.

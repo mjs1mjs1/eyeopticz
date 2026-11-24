@@ -4,6 +4,8 @@ description: Michael J. Simpson, Ph.D., optical scientist with more than 25 year
 hide_byline: true
 ---
 
+{% if site.author.photo != "" %}<figure class="portrait"><img src="{{ '/assets/img/' | append: site.author.photo | relative_url }}" alt="{{ site.author.display }}"></figure>{% endif %}
+
 <p class="lead">I am Michael J. Simpson, Ph.D., an optical scientist. I worked in industry for more than 25 years on the research and development of intraocular lenses, including diffractive multifocal and toric lenses, and I continue to work on ophthalmic optics.</p>
 
 This site is for my research on parts of human vision that are rarely studied. It is separate from my consulting work, which is described at [simpsonoptics.com](https://simpsonoptics.com).

@@ -1,0 +1,31 @@
+<svg class="fig-svg" viewBox="0 0 460 280" role="img" aria-label="Schematic of an eye with an intraocular lens. Light at a wide angle partly passes through the small lens and partly misses it. The two paths land at different places on the retina, leaving a gap that is seen as a dark shadow.">
+  <!-- globe / retina -->
+  <path d="M190 30 A120 110 0 1 1 190 250" fill="none" stroke="var(--fg)" stroke-opacity=".45" stroke-width="2"/>
+  <path d="M150 42 L190 30 M150 238 L190 250" stroke="var(--fg)" stroke-opacity=".45" stroke-width="2"/>
+  <!-- cornea -->
+  <path d="M150 42 Q 82 140 150 238" fill="none" stroke="var(--fg)" stroke-width="2"/>
+  <!-- iris -->
+  <line x1="168" y1="52" x2="168" y2="86" stroke="var(--fg)" stroke-opacity=".7" stroke-width="4"/>
+  <line x1="168" y1="168" x2="168" y2="218" stroke="var(--fg)" stroke-opacity=".7" stroke-width="4"/>
+  <!-- small IOL -->
+  <ellipse cx="200" cy="140" rx="9" ry="24" fill="var(--c-teal)" fill-opacity=".35" stroke="var(--c-teal)" stroke-width="2"/>
+  <!-- rays through IOL (teal) -->
+  <g stroke="var(--c-teal)" stroke-width="2" fill="none">
+    <path d="M40 40 L130 112 L198 128 L254 233"/>
+    <path d="M40 58 L128 124 L200 148 L246 237"/>
+  </g>
+  <!-- rays missing IOL (amber) -->
+  <g stroke="var(--c-amber)" stroke-width="2" fill="none">
+    <path d="M40 4 L132 92 L188 96 L282 211"/>
+    <path d="M40 20 L131 99 L189 102 L276 216"/>
+  </g>
+  <!-- shadow gap on retina -->
+  <path d="M273 219 A120 110 0 0 1 258 230" stroke="var(--c-coral)" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <line x1="268" y1="228" x2="330" y2="262" stroke="var(--c-coral)" stroke-width="1.5"/>
+  <text x="334" y="268" class="lbl strong">shadow (gap)</text>
+  <line x1="209" y1="126" x2="226" y2="118" stroke="var(--muted)" stroke-width="1"/><text x="230" y="120" class="lbl">intraocular lens</text>
+  <text x="20" y="150" class="lbl">cornea</text>
+  <text x="330" y="60" class="lbl">retina</text>
+  <text x="150" y="272" class="lbl" style="fill:var(--c-teal)">through the lens</text>
+  <text x="296" y="190" class="lbl" style="fill:var(--c-amber-ink)">missing the lens</text>
+</svg>

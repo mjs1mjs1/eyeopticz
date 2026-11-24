@@ -2,10 +2,16 @@
 layout: default
 ---
 {%- include pdf-url.html local=page.pdf remote=page.pdf_remote -%}
+<div class="page-hero">
+  <div class="inner">
+    <span class="hero-icon">{% include icon.html name="papers" %}</span>
+    <p class="eyebrow">{% if page.journal %}Journal article{% else %}Article{% endif %} · {{ page.year }}</p>
+    <h1>{{ page.title }}</h1>
+    <p class="byline">{{ page.authors | join: ", " }}</p>
+  </div>
+</div>
+<div class="inner">
 <article class="prose paper">
-  <p class="eyebrow">{% if page.journal %}Journal article{% else %}Article{% endif %} · {{ page.year }}</p>
-  <h1>{{ page.title }}</h1>
-  <p class="byline">{{ page.authors | join: ", " }}</p>
   <p class="citation">
     {%- if page.journal %}<em>{{ page.journal }}</em>{% if page.volume %} {{ page.volume }}{% endif %}{% if page.firstpage %}, {{ page.firstpage }}{% if page.lastpage %}–{{ page.lastpage }}{% endif %}{% endif %} ({{ page.year }}).{% endif %}
     {%- if page.doi %} <a href="https://doi.org/{{ page.doi }}">doi:{{ page.doi }}</a>{% endif %}
@@ -24,3 +30,4 @@ layout: default
   <h2>How to cite</h2>
   <p class="cite-block">{{ page.authors | join: ", " }} ({{ page.year }}). {{ page.title }}.{% if page.journal %} <em>{{ page.journal }}</em>{% if page.volume %}, {{ page.volume }}{% endif %}{% if page.firstpage %}, {{ page.firstpage }}{% if page.lastpage %}–{{ page.lastpage }}{% endif %}{% endif %}.{% endif %}{% if page.doi %} https://doi.org/{{ page.doi }}{% endif %}</p>
 </article>
+</div>

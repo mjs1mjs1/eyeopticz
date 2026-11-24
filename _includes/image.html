@@ -1,0 +1,9 @@
+{%- comment -%}
+Put a picture on a page:
+  {% include image.html file="my-picture.jpg" caption="What it shows" %}
+The file goes in the assets/img folder. Optional: alt="description for blind readers", width="half"
+{%- endcomment -%}
+<figure class="photo{% if include.width == 'half' %} half{% endif %}">
+  <img src="{{ '/assets/img/' | append: include.file | relative_url }}" alt="{{ include.alt | default: include.caption | escape }}" loading="lazy">
+  {%- if include.caption %}<figcaption>{{ include.caption }}</figcaption>{% endif %}
+</figure>

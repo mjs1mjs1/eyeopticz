@@ -1,0 +1,25 @@
+<svg class="fig-svg" viewBox="0 0 440 300" role="img" aria-label="Top view of a head showing the visual field of one eye: the central field, the field to 60 degrees, and the far periphery beyond 60 degrees out to about 105 degrees, which is rarely measured">
+  <defs>
+    <radialGradient id="vf-c" cx="0.5" cy="1" r="1"><stop offset="0" stop-color="var(--c-teal)" stop-opacity=".55"/><stop offset="1" stop-color="var(--c-teal)" stop-opacity=".15"/></radialGradient>
+  </defs>
+  <!-- far periphery 60-105 deg (to the left), measured from straight up -->
+  <path d="M230 250 L 32.4 135.9 A 228 228 0 0 1 2.9 270.0 Z" fill="var(--c-amber)" fill-opacity=".35"/>
+  <path d="M230 250 L 32.4 135.9 A 228 228 0 0 1 2.9 270.0" fill="none" stroke="var(--c-amber)" stroke-width="2" stroke-dasharray="5 4"/>
+  <!-- 0-60 deg temporal + 60 nasal -->
+  <path d="M230 250 L 32.4 135.9 A 228 228 0 0 1 427.6 135.9 Z" fill="url(#vf-c)"/>
+  <!-- central 0-30 -->
+  <path d="M230 250 L 116 52.5 A 228 228 0 0 1 344 52.5 Z" fill="var(--c-teal)" fill-opacity=".35"/>
+  <line x1="230" y1="250" x2="230" y2="14" stroke="var(--fg)" stroke-opacity=".35" stroke-dasharray="3 4"/>
+  <!-- head -->
+  <ellipse cx="258" cy="282" rx="58" ry="40" fill="var(--surface)" stroke="var(--fg)" stroke-opacity=".5" stroke-width="1.5"/>
+  <circle cx="230" cy="250" r="9" fill="var(--surface)" stroke="var(--fg)" stroke-width="1.5"/>
+  <circle cx="230" cy="246" r="3.5" fill="var(--fg)"/>
+  <text x="236" y="26" class="lbl">0°</text>
+  <text x="150" y="44" class="lbl">30°</text>
+  <text x="18" y="126" class="lbl">60°</text>
+  <text x="4" y="292" class="lbl">105°</text>
+  <text x="60" y="210" class="lbl strong">far periphery</text>
+  <text x="60" y="226" class="lbl">rarely measured</text>
+  <text x="250" y="110" class="lbl strong">central and</text>
+  <text x="250" y="126" class="lbl strong">mid-periphery</text>
+</svg>

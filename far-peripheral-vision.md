@@ -7,6 +7,11 @@ updated: 2026-11-23
 
 <p class="lead">The human visual field extends beyond 90 degrees to the side, yet vision past about 60 degrees has hardly been researched. Calculations suggest that an intraocular lens reduces far peripheral vision, but it is almost never measured.</p>
 
+<figure class="diagram">
+{% include fig-visual-field.svg %}
+<figcaption>The visual field of one eye, seen from above. The shaded amber region beyond about 60° is the far periphery. Schematic only.</figcaption>
+</figure>
+
 ## In brief
 
 - Clinical visual field tests and most research concentrate on the central part of the field.

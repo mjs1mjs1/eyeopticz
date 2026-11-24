@@ -17,41 +17,52 @@ Allow about an hour the first time.
 
 A "repository" is just a folder on GitHub.
 
-1. Unzip `eyeopticz-site.zip` on your computer. You get a folder called `eyeopticz`.
+1. Unzip `eyeopticz-site.zip` on your computer (on Windows: right-click it and
+   choose **Extract All…**; do not drag from inside the zip). You get a folder called `eyeopticz`.
 2. On GitHub, click the **+** at the top right, then **New repository**.
 3. Name it `eyeopticz`. Choose **Public** (it is your public website anyway).
    Leave the other boxes unticked. Click **Create repository**.
 4. On the next page, click the link **uploading an existing file**.
-5. Open the unzipped `eyeopticz` folder, select **everything inside it**
-   (not the folder itself), and drag it onto the GitHub page.
-   - On a Mac, files starting with a dot (`.gitignore`, `.ruby-version`) are
+5. Using **Chrome, Edge or Firefox** (not Safari, which drops the folders),
+   open the unzipped `eyeopticz` folder, select **everything inside it**
+   (not the folder itself; Ctrl + A on Windows), and drag it onto the GitHub page.
+   Do not use the "choose your files" button, which cannot pick folders.
+   Before committing, check the list shows paths such as
+   `_layouts/page.html` and `_papers/nodal-points-and-the-eye.md`.
+   - On a Mac, files starting with a dot (`.gitignore`) are
      hidden. Press **Cmd + Shift + .** in Finder to show them, and include them.
 6. Wait for the upload to finish, then click **Commit changes** at the bottom.
 
-## Step 3. Connect GitHub to Cloudflare Pages (10 minutes)
+## Step 3. Connect GitHub to Cloudflare (10 minutes)
 
 1. Log in to https://dash.cloudflare.com.
-2. In the left menu choose **Workers & Pages**, then **Create**
-   (or **Create application**), then the **Pages** tab,
-   then **Connect to Git**.
-3. Choose **GitHub**, sign in, and allow Cloudflare to see the `eyeopticz`
-   repository. Select it and click **Begin setup**.
-4. Fill in the build settings exactly like this:
+2. In the left menu choose **Workers & Pages**, then **Create application**.
+3. Choose **Import a repository** (or **Connect to Git**), pick **GitHub**,
+   sign in, and select the `eyeopticz` repository.
+4. Fill in the settings exactly like this:
    - **Project name:** `eyeopticz`
-   - **Production branch:** `main`
-   - **Framework preset:** `Jekyll`
-   - **Build command:** `bundle exec jekyll build`
-   - **Build output directory:** `_site`
-5. Click **Save and Deploy**. The first build takes 2 to 4 minutes.
-6. When it says "Success", click the link it shows
-   (something like `eyeopticz.pages.dev`). That is your site, working.
+   - **Build command:** `bundle install && bundle exec jekyll build`
+   - **Deploy command:** `npx wrangler deploy`
+   - Leave anything else as it is.
+   The file `wrangler.jsonc` in the repository tells Cloudflare that the
+   finished website is in the `_site` folder, so you do not need to enter
+   an output directory.
+5. Click **Deploy**. The first build takes 2 to 4 minutes.
+6. When it succeeds, Cloudflare shows a link ending in `workers.dev`.
+   That is your site, working.
+
+If you later find a screen that offers **Pages** instead (it asks for a
+"Framework preset" and a "Build output directory"), that also works:
+build command `bundle install && bundle exec jekyll build`, output
+directory `_site`.
 
 ## Step 4. Attach eyeopticz.com (5 minutes, then up to an hour to take effect)
 
 Because your domain is already at Cloudflare, this is two clicks.
 
-1. In your Pages project, open the **Custom domains** tab.
-2. Click **Set up a custom domain**, type `eyeopticz.com`, and confirm.
+1. In your project, open **Settings**, then **Domains & Routes**
+   (on a Pages project it is the **Custom domains** tab).
+2. Click **Add**, choose **Custom domain**, type `eyeopticz.com`, and confirm.
    Cloudflare adds the DNS record for you.
 3. Do it again for `www.eyeopticz.com`, so both addresses work.
 4. It can take a few minutes up to an hour before eyeopticz.com shows the site.
@@ -93,6 +104,8 @@ then click **Commit changes**. The site rebuilds automatically.
 
 ## Where things are
 
+(`wrangler.jsonc`, `Gemfile` and `Gemfile.lock` are settings files. You do not need to edit them.)
+
 | To change... | Edit this file |
 | --- | --- |
 | Site name, your details, the menu | `_config.yml` |
@@ -114,8 +127,26 @@ add a line for it in `_data/publications.yml`.
 
 ## If a build fails
 
-Cloudflare shows the error under your project's **Deployments** tab.
+Cloudflare shows the error under your project's **Deployments** tab
+(click the failed deployment, then **View build log**).
 The most common causes are a typo in `_config.yml` or `_data/publications.yml`
 (these are sensitive to spaces and quotation marks). Undo your last change on
-GitHub and try again. If the error mentions Ruby, add an environment variable
-in the Pages project settings: `RUBY_VERSION` = `3.3.6`.
+GitHub and try again. If the error mentions Ruby, add a build variable
+under Settings > Build: `RUBY_VERSION` = `3.4`.
+
+## Adding pictures
+
+1. Upload the picture into the `assets/img` folder on GitHub (open the folder,
+   then **Add file > Upload files**). JPG or PNG, ideally under 500 KB.
+2. On the page where you want it, add this line:
+
+       {% include image.html file="your-picture.jpg" caption="What it shows" %}
+
+   Add `width="half"` inside the brackets for a smaller picture.
+3. For a photo of yourself on the home and About pages, upload it as
+   `assets/img/photo.jpg` and set `photo: photo.jpg` in `_config.yml`.
+
+## Colours
+
+The colours are listed at the top of `assets/css/site.css`. Each topic page
+has its own colour (teal, amber, coral or indigo), set near the top of `_config.yml`.

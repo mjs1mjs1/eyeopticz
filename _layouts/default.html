@@ -3,10 +3,10 @@
 <head>
 {% include head.html %}
 </head>
-<body>
+<body class="topic-{{ page.color | default: 'teal' }}">
 <a class="skip" href="#main">Skip to content</a>
 {% include header.html %}
-<main id="main" class="inner">
+<main id="main">
 {{ content }}
 </main>
 {% include footer.html %}

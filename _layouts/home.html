@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<section class="home-hero">
+  <div class="inner hero-grid">
+    <div class="hero-text">
+      <p class="eyebrow">Research by {{ site.author.display }}</p>
+      <h1>{{ page.title }}</h1>
+      <p class="lead">{{ page.lead }}</p>
+      <p class="hero-links"><a class="button" href="{{ '/nodal-point/' | relative_url }}">Start with the nodal point</a> <a class="button ghost" href="{{ '/publications/' | relative_url }}">Publications</a></p>
+    </div>
+    <figure class="hero-figure">
+      {% include fig-visual-field.svg %}
+      <figcaption>The visual field of one eye, seen from above. Vision beyond about 60° is rarely measured.</figcaption>
+    </figure>
+  </div>
+</section>
+<div class="inner">
+  <div class="home-body">
+  {{ content }}
+  </div>
+</div>

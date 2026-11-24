@@ -1,6 +1,9 @@
 <header class="site-header">
   <div class="inner">
-    <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}<span>{{ site.tagline }}</span></a>
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <svg class="logo" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="16" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="20" cy="20" r="7.5" fill="#fff"/><circle cx="20" cy="20" r="3.4" fill="currentColor"/><circle cx="17.6" cy="17.4" r="1.4" fill="#fff"/></svg>
+      <span class="brand-text">{{ site.title }}<small>{{ site.tagline }}</small></span>
+    </a>
     <nav aria-label="Main">
       {%- for item in site.nav %}
       {%- assign active = false -%}
