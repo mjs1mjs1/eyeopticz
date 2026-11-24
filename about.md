@@ -30,4 +30,4 @@ Corrections, observations, questions and material relevant to these topics are w
 
 {% if site.author.email != "" %}Email: [{{ site.author.email }}](mailto:{{ site.author.email }}) · {% endif %}[LinkedIn]({{ site.author.linkedin }})
 
-<p class="note">The information on this site is for research and education. It is not medical advice. If you have concerns about your vision, please see an ophthalmologist or optometrist.</p>
+<p class="note">The information on this site is for research and education. It is not medical advice. If you have concerns about your vision, please see an Ophthalmologist or Optometrist.</p>
