@@ -6,13 +6,9 @@ hide_byline: true
 
 {% if site.author.photo != "" %}<figure class="portrait"><img src="{{ '/assets/img/' | append: site.author.photo | relative_url }}" alt="{{ site.author.display }}"></figure>{% endif %}
 
-<p class="lead">This website has information about various specific aspects of human vision, rather than being a general overview. The main topics are ones that have rarely been studied. but these have led back to topics that are widely discussed, such as the nodal point and lens tilt, where some of the fundamentals are reconsidered. No medical advice is given here.
-  
-The website is run by Mike Simpson, and at the moment I still have a separate website for consulting work at [simpsonoptics.com](https://simpsonoptics.com).
+<p class="lead">This website explores specific aspects of human vision, including topics that have rarely been studied. It is run by Mike Simpson, who has a separate website for consulting work at [simpsonoptics.com](https://simpsonoptics.com) (for now).
 
 </p>
-
-
 
 ## Research interests
 
