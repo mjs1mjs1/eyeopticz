@@ -1,8 +1,8 @@
 ---
 layout: home
-title: Open questions in the optics of human vision
-lead: I spent more than 25 years in industry on the research and development of intraocular lenses, the artificial lenses implanted during cataract surgery. That work led me to questions about human vision that have rarely been studied. This site sets out what I have found, with the papers, simulations and historical sources behind it.
-description: Research by Michael J. Simpson, Ph.D., on parts of human vision that are rarely measured or discussed, including the nodal point of the eye, far peripheral vision and negative dysphotopsia.
+title: Selected topics in the optics of human vision
+lead: There is a lot of information about human vision, but sometimes this can be misleading. The artificial lenses that are implanted during cataract surgery, called intraocular lenses (IOLs), have led to new insight about the specific topics  summarized here, while also clarifying that  there are also open questions about vision.
+description: Research by Michael J. Simpson, Ph.D., on selected aspects of human vision that are rarely measured or discussed, including the nodal point of the eye, far peripheral vision and negative dysphotopsia.
 ---
 
 <div class="cards">
