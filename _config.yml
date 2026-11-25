@@ -25,10 +25,12 @@ nav:
     url: /
   - title: Nodal point
     url: /nodal-point/
-  - title: Far peripheral vision
-    url: /far-peripheral-vision/
   - title: Negative dysphotopsia
     url: /negative-dysphotopsia/
+  - title: Far peripheral vision
+    url: /far-peripheral-vision/
+  - title: Lens Tilt
+    url: /lens-tilt/
   - title: History of optics
     url: /history/
   - title: Publications
