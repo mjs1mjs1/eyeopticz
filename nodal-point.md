@@ -1,41 +1,33 @@
 ---
-title: "The nodal point of the eye: how the retinal image scales to wide angles"
-description: The nodal point is usually defined only for small angles, yet it describes the retinal image of the eye out to very wide angles. Why this works, what effective focal length means for the eye, and the historical sources.
+title: Nodal Points and cardinal points
+description: The nodal point of the eye can be used to scale the retina to very large angles, even though it is only defined for small angles. Also, how the term efl (effective or equivalent focal length) is defined.
 topic_key: nodal
-updated: 2026-11-23
+updated: 2026-11-24
 ---
 
-<p class="lead">The nodal point is normally defined for small angles and flat surfaces. Yet for the human eye it can be used to scale the image on the retina out to very large angles. This works because the cornea and the retina are both curved, and their effects largely cancel.</p>
+{% include image.html file="listing-1845-nodal-drawing.webp" caption="Nodal point drawing from Listing 1845" %}
 
-## In brief
+## Nodal Points
 
-- The **nodal point** is a reference point in an optical system. A ray aimed at the first nodal point leaves from the second at the same angle.
-- In textbook optics this only holds for rays close to the axis (the "paraxial" region).
-- In the eye, light from very wide angles still lands on the retina roughly where the nodal point predicts. Many people assumed this, but it had not been explained in print.
-- The explanation is the **curvature of the cornea and the retina**. The cornea bends incoming rays so that angles at the exit pupil are about 0.8 times the input angles. The retina then curves round to meet the image.
-- Seen from the nodal point, which sits close to the back surface of the crystalline lens, the angle to a point on the retina is roughly the same as the angle of the light coming in.
+The work on "far peripheral vision" led to finding that the nodal point of the eye can be used to scale the retina to very large angles, even though it is only defined for very small angles and flat surfaces. This seemed to be widely known, or assumed, but with no published explanation.
 
-<figure class="diagram">
-{% include fig-nodal.svg %}
-<figcaption>Schematic only, not to scale. A wide-angle ray is bent at the cornea, travels inside the eye at about 0.8 of its original angle, and reaches the curved retina at a point that, seen from the nodal point N, lies at roughly the original angle.</figcaption>
-</figure>
+Papers have now been published that explore this topic, and these show that the corneal curvature and the retinal curvature are factors that make this possible. The cornea curves around toward incoming light, input angles are rescaled by a fairly constant factor of about 0.8 at the exit pupil, and then the retina curves around to meet the image. When the image is viewed from the nodal point, which is approximately at the posterior surface of a crystalline lens, the angle to the nodal point is approximately the same as the input angle.
 
-## Why it matters
+## Focal Length and efl
 
-Most models of the eye, and most measurements of vision, concentrate on the central few degrees. Knowing that the nodal point still describes where light lands at very wide angles gives a simple way to relate angles in the world to positions on the retina across the whole visual field. That matters for understanding [far peripheral vision]({{ '/far-peripheral-vision/' | relative_url }}) and the shadow of [negative dysphotopsia]({{ '/negative-dysphotopsia/' | relative_url }}) after cataract surgery.
+The work on nodal points led to finding a lack of clarity about how the term efl is defined. For a lens in air, there is really just a "focal length", yet it has become common to use the term "effective focal length" for efl, and it is not clear how this came about.
 
-## What "effective focal length" means for the eye
+The issue that is probably being addressed is that when the image is in fluid, the overall optical effect is described using the focal length divided by the refractive index. This is important for lenses in the eye, but it is not the situation for the majority of lenses. However, for a lens in air the index would be 1, so the same term could be used for all lenses. It seems likely that the use of efl became common when computers began to be widely used for optical design.
 
-The term **effective focal length** (EFL) is used loosely. Historically the term was "equivalent focal length". For a lens in a fluid such as the eye, the EFL is the focal length divided by the refractive index, as given in Warren Smith's *Modern Optical Engineering* (1966). For the eye, this places the nodal point at f′/n′ from the retina.
+Looking at historical references, the word "equivalent" has been more commonly used, with "equivalent focal length" being a definition for efl. This probably originally described the focal length for a thin "equivalent" lens that had a similar optical effect to a thick lens or a compound lens in air (though the extra word was not necessary). The optical effect of a lens that normally forms an image in fluid, when the object is in air, can be described by an equivalent lens in air using the efl, where:
 
-An open question: I have not found a clear historical source for when and why the modern definition of EFL was adopted. If you know one, please get in touch.
+- focal length is the distance from the principal plane to the image, and
+- efl = (focal length)/index.
+
+Even this does not seem to be a universal definition though, which is unfortunate for something as fundamental to lenses as the term "focal length".
+
+The rationale for using the word "effective" rather than "equivalent" for efl is unclear, but it was included in Warren Smith's Modern Optical Engineering in 1966, along with comments that "focal length" = "effective focal length" = efl. It seems likely that only lenses in air were being considered for this, and that efl was preferred over f or fl because early raytrace computer software was already using 3-letter terms. If there is a clear historical reference for either of these things it would be good to find them (why efl rather than f; why effective rather than equivalent).
 
 ## Papers on this topic
 
 {% include related-papers.html topic="nodal" %}
-
-## Related
-
-- [Historical sources on the nodal point and paraxial optics]({{ '/history/' | relative_url }}), from Gauss (1841) and Listing (1845) onwards
-- [English translation of Listing (1845)]({{ '/papers/listing-1845-translation/' | relative_url }}), where the nodal point of the eye was introduced
-- [Far peripheral vision]({{ '/far-peripheral-vision/' | relative_url }})
