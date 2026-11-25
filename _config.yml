@@ -1,10 +1,10 @@
 # Site settings. Change these lines if your details change.
 title: EyeOpticz
-tagline: Research on the optics of human vision
+tagline: Research into the optics of human vision
 description: >-
   Original research by Michael J. Simpson, Ph.D., on under-explored parts of
   human vision: the nodal point of the eye, far peripheral vision, negative
-  dysphotopsia and the history of physiological optics.
+  dysphotopsia, lens tilt, and the history of physiological optics.
 url: "https://eyeopticz.com"
 baseurl: ""
 lang: en
