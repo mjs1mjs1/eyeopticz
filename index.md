@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Selected topics about the optics of human vision
-lead: Intraocular lenses, implanted during cataract surgery, led to research into various aspects of overall vision.
+lead: Intraocular lenses, implanted during cataract surgery, have led to research into various aspects of overall vision.
 description: Research by Michael J. Simpson, Ph.D., on selected aspects of human vision, including the nodal point of the eye, far peripheral vision, lens tilt, negative dysphotopsia, and myopia.
 ---
 
